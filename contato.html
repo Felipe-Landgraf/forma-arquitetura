@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore um formulário demonstrativo para um escritório fictício de arquitetura e interiores.">
+  <title>Vamos conversar | Forma Arquitetura</title>
+  <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container barra">
+      <a class="marca" href="index.html" aria-label="Forma Arquitetura, início">
+        <span class="simbolo" aria-hidden="true"></span>forma.
+      </a>
+      <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal" hidden>Menu +</button>
+      <nav class="navegacao" id="menu-principal" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="estudio.html">O estúdio</a>
+        <a href="contato.html" aria-current="page" class="link-contato">Vamos conversar ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <div class="container contato">
+      <section class="contato-intro" aria-labelledby="titulo-contato">
+        <span class="etiqueta">Contato / O primeiro passo</span>
+        <h1 id="titulo-contato">Vamos dar<br>forma à sua<br><em>ideia?</em></h1>
+        <p>Uma mudança de ambiente, uma casa para uma nova fase ou um lugar para trabalhar melhor. Conte o que você imagina.</p>
+        <div class="contato-info"><strong>Boas conversas abrem caminhos.</strong><p>Residências · Interiores · Espaços comerciais</p></div>
+        <p class="nota-demo">Forma é um estúdio fictício criado para este portfólio. Não há atendimento comercial real neste site.</p>
+      </section>
+      <form class="formulario">
+        <h2>Conte um pouco sobre você.</h2>
+        <p>Os campos são obrigatórios. Este formulário é demonstrativo e não envia nem armazena informações.</p>
+        <div class="campo">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Como podemos chamar você?" autocomplete="name" minlength="2" maxlength="80" required>
+        </div>
+        <div class="campo">
+          <label for="email">Seu e-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@exemplo.com" autocomplete="email" maxlength="120" required>
+        </div>
+        <div class="campo">
+          <label for="tipo">O que você gostaria de projetar?</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Selecione uma opção</option>
+            <option value="residencial">Uma residência</option>
+            <option value="interiores">Um projeto de interiores</option>
+            <option value="comercial">Um espaço comercial</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="mensagem">Sua ideia</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Fale sobre o espaço e o que você gostaria de transformar." minlength="20" maxlength="2000" aria-describedby="ajuda-mensagem" required></textarea>
+          <small class="ajuda" id="ajuda-mensagem">Escreva pelo menos 20 caracteres.</small>
+        </div>
+        <button class="botao" type="submit" disabled>Concluir demonstração <span aria-hidden="true">↗</span></button>
+        <div class="resposta-formulario" role="status" aria-live="polite" tabindex="-1" hidden></div>
+        <noscript><p class="nota-demo">Ative o JavaScript para concluir a demonstração. Não preencha dados pessoais com o JavaScript desativado.</p></noscript>
+      </form>
+    </div>
+  </main>
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-linha">
+        <a class="marca" href="index.html" aria-label="Forma Arquitetura, início">forma.</a>
+        <div class="rodape-links">
+          <a href="projetos.html">Projetos</a>
+          <a href="estudio.html">O estúdio</a>
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+      <div class="rodape-nota">
+        <p>© 2026 Forma. Um projeto de portfólio.</p>
+        <p>Estúdio e projetos fictícios. Fotografias ilustrativas: <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

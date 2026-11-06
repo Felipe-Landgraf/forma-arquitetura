@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça seis conceitos de residências, interiores e espaços comerciais no portfólio fictício do Forma.">
+  <title>Projetos | Forma Arquitetura</title>
+  <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container barra">
+      <a class="marca" href="index.html" aria-label="Forma Arquitetura, início">
+        <span class="simbolo" aria-hidden="true"></span>forma.
+      </a>
+      <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal" hidden>Menu +</button>
+      <nav class="navegacao" id="menu-principal" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="projetos.html" aria-current="page">Projetos</a>
+        <a href="estudio.html">O estúdio</a>
+        <a href="contato.html" class="link-contato">Vamos conversar ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <div class="container">
+      <header class="abertura-pagina">
+        <span class="etiqueta">Portfólio / 06 conceitos</span>
+        <h1>Modos de habitar.</h1>
+        <p>Residências, interiores e espaços de encontro. Uma coleção de conceitos para imaginar novas relações entre pessoas e lugares.</p>
+      </header>
+      <div class="barra-filtros">
+        <div class="filtros" role="group" aria-label="Filtrar projetos por categoria">
+          <button class="filtro ativo" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button class="filtro" id="residenciais" type="button" data-filtro="residenciais" aria-pressed="false">Residenciais</button>
+          <button class="filtro" id="interiores" type="button" data-filtro="interiores" aria-pressed="false">Interiores</button>
+          <button class="filtro" id="comerciais" type="button" data-filtro="comerciais" aria-pressed="false">Comerciais</button>
+        </div>
+        <p class="contador" role="status" aria-live="polite">6 projetos</p>
+      </div>
+      <noscript><p class="aviso-sem-js">Todos os projetos estão disponíveis abaixo. Ative o JavaScript para usar os filtros e abrir os detalhes.</p></noscript>
+      <div class="grade-projetos">
+      <article class="cartao-projeto" data-categoria="residenciais" data-descricao="Um conceito de casa que aproxima a vida cotidiana do jardim. A proposta explora aberturas generosas, materiais naturais e ambientes que convidam a permanecer. A fotografia é uma referência visual ilustrativa.">
+        <div class="foto-projeto"><img src="imagens/casa-patio.jpg" alt="Casa contemporânea com painéis de madeira, grandes janelas e uma árvore no jardim" width="1800" height="1200" loading="lazy"></div>
+        <div class="legenda-projeto">
+          <div><h3>Casa Pátio</h3><p class="tipo-projeto">Residencial · Conceito</p></div>
+          <span aria-hidden="true">↗</span>
+        </div>
+        <button class="detalhes-projeto" type="button" aria-label="Ver detalhes de Casa Pátio">Conheça o conceito</button>
+      </article>
+      <article class="cartao-projeto" data-categoria="interiores" data-descricao="Uma proposta de interiores guiada pela luz natural e por uma paleta tranquila. Móveis de linhas simples e materiais acolhedores ajudam a criar um espaço confortável para diferentes momentos da rotina. A fotografia é uma referência visual ilustrativa.">
+        <div class="foto-projeto"><img src="imagens/apartamento-luz.jpg" alt="Sala de estar clara com sofá, poltronas e elementos de madeira" width="1800" height="1200" loading="lazy"></div>
+        <div class="legenda-projeto">
+          <div><h3>Apartamento Luz</h3><p class="tipo-projeto">Interiores · Conceito</p></div>
+          <span aria-hidden="true">↗</span>
+        </div>
+        <button class="detalhes-projeto" type="button" aria-label="Ver detalhes de Apartamento Luz">Conheça o conceito</button>
+      </article>
+      <article class="cartao-projeto" data-categoria="comerciais" data-descricao="Um conceito de espaço de trabalho com áreas compartilhadas, circulação livre e presença de vegetação. A proposta equilibra momentos de concentração com oportunidades de encontro. A fotografia é uma referência visual ilustrativa.">
+        <div class="foto-projeto"><img src="imagens/escritorio-essencia.jpg" alt="Escritório aberto com mesas compartilhadas, plantas e janelas amplas" width="1800" height="1200" loading="lazy"></div>
+        <div class="legenda-projeto">
+          <div><h3>Escritório Essência</h3><p class="tipo-projeto">Comercial · Conceito</p></div>
+          <span aria-hidden="true">↗</span>
+        </div>
+        <button class="detalhes-projeto" type="button" aria-label="Ver detalhes de Escritório Essência">Conheça o conceito</button>
+      </article>
+      <article class="cartao-projeto" data-categoria="residenciais" data-descricao="Um estudo residencial em que sala, jantar e varanda formam uma sequência de espaços conectados. Madeira, vidro e tons neutros orientam a composição e valorizam a relação entre dentro e fora. A fotografia é uma referência visual ilustrativa.">
+        <div class="foto-projeto"><img src="imagens/casa-horizonte.jpg" alt="Ambiente integrado com mesa de jantar, escada e portas de vidro abertas para a varanda" width="1800" height="1200" loading="lazy"></div>
+        <div class="legenda-projeto">
+          <div><h3>Casa Horizonte</h3><p class="tipo-projeto">Residencial · Conceito</p></div>
+          <span aria-hidden="true">↗</span>
+        </div>
+        <button class="detalhes-projeto" type="button" aria-label="Ver detalhes de Casa Horizonte">Conheça o conceito</button>
+      </article>
+      <article class="cartao-projeto" data-categoria="interiores" data-descricao="Uma proposta para viver com mais leveza. A seleção de texturas, o aproveitamento da iluminação e a disposição dos móveis procuram tornar os ambientes agradáveis e fáceis de usar. A fotografia é uma referência visual ilustrativa.">
+        <div class="foto-projeto"><img src="imagens/interior-natural.jpg" alt="Sala com sofá cinza, escada de madeira e amplas portas de vidro" width="1800" height="1200" loading="lazy"></div>
+        <div class="legenda-projeto">
+          <div><h3>Morada Natural</h3><p class="tipo-projeto">Interiores · Conceito</p></div>
+          <span aria-hidden="true">↗</span>
+        </div>
+        <button class="detalhes-projeto" type="button" aria-label="Ver detalhes de Morada Natural">Conheça o conceito</button>
+      </article>
+      <article class="cartao-projeto" data-categoria="comerciais" data-descricao="Um conceito de ambiente comercial pensado para receber, trabalhar e trocar ideias. Áreas abertas e pontos de convivência sugerem diferentes possibilidades de uso ao longo do dia. A fotografia é uma referência visual ilustrativa.">
+        <div class="foto-projeto"><img src="imagens/estudio.jpg" alt="Espaço de trabalho com mesas, cadeiras e iluminação natural" width="1800" height="1200" loading="lazy"></div>
+        <div class="legenda-projeto">
+          <div><h3>Espaço Encontro</h3><p class="tipo-projeto">Comercial · Conceito</p></div>
+          <span aria-hidden="true">↗</span>
+        </div>
+        <button class="detalhes-projeto" type="button" aria-label="Ver detalhes de Espaço Encontro">Conheça o conceito</button>
+      </article>
+      </div>
+    </div>
+    <dialog class="janela-projeto" aria-labelledby="titulo-janela">
+      <div class="conteudo-janela">
+        <button class="fechar-janela" type="button">Fechar ×</button>
+        <img class="imagem-janela" alt="" width="1800" height="1200">
+        <div class="texto-janela">
+          <span class="etiqueta"></span>
+          <h2 id="titulo-janela"></h2>
+          <p class="descricao-projeto"></p>
+          <a class="link-seta" href="contato.html">Vamos pensar no seu espaço? <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </dialog>
+  <section class="convite" aria-labelledby="titulo-convite">
+    <div class="container">
+      <div>
+        <span class="etiqueta">Toda boa ideia começa com uma conversa</span>
+        <h2 id="titulo-convite">Qual espaço você imagina?</h2>
+      </div>
+      <a class="botao botao-claro" href="contato.html">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+  </main>
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-linha">
+        <a class="marca" href="index.html" aria-label="Forma Arquitetura, início">forma.</a>
+        <div class="rodape-links">
+          <a href="projetos.html">Projetos</a>
+          <a href="estudio.html">O estúdio</a>
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+      <div class="rodape-nota">
+        <p>© 2026 Forma. Um projeto de portfólio.</p>
+        <p>Estúdio e projetos fictícios. Fotografias ilustrativas: <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
